@@ -15,7 +15,7 @@ export function deleteTicket(id) {
 
 export function editTicket(formData) {
   return fetch('https://t1hw7.herokuapp.com/', {
-    method: 'PUT',
+    method: 'POST',
     body: formData,
   }).then((response) => response.json());
 }

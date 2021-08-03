@@ -54,6 +54,7 @@ export function modalEditTicket(titleValue, descrValue, id) {
   ticketPopup.querySelector('.modal__ok').addEventListener('click', () => {
     const formTicket = new FormData(ticketPopup);
     formTicket.append('id', id);
+    formTicket.append('edit', true);
     editTicket(formTicket);
   });
   return ticketPopup;
